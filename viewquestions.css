@@ -1,0 +1,214 @@
+
+
+/* ================= GLOBAL ================= */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding-top: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f6fc;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background: #294add !important;
+}
+
+/* ================= SECOND BAR ================= */
+.navbar-2 {
+    background: #69d46e;
+    padding: 10px 20px;
+    max-width: 1100px;
+    margin: 0 auto;  
+    margin-top: 40px;
+    font-weight: 600;
+    border-bottom: 1px solid #dcdde1;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ================= EXAM WRAPPER ================= */
+.exam-wrapper {
+    max-width: 1100px;
+    margin: 20px auto;
+    margin-top: 40px;
+    background: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    padding-bottom: 15px;
+}
+
+/* ================= INFO BAR ================= */
+.exam-info-bar {
+    background: linear-gradient(90deg, #0d6efd, #0b5ed7);
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px 6px 0 0;
+}
+
+/* ================= BODY ================= */
+.exam-body {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    gap: 15px;
+    padding: 15px;
+}
+
+/* ================= QUESTION CARD ================= */
+.question {
+    border: 1px solid #dcdde1;
+    border-radius: 4px;
+}
+
+/* Question text */
+.question-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2137b4;
+    margin-bottom: 15px;
+}
+
+
+/* Option numbering */
+.opt-no {
+    font-weight: bold;
+    margin-right: 8px;
+    color: hsl(274, 100%, 3%);
+}
+
+/* Option alignment */
+.option {
+    display: flex;
+    align-items: center;
+    color: hsl(274, 100%, 3%);
+    gap: 6px;
+}
+
+.card-header {
+    background: #17a2b8;
+    color: #fff;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+/* ================= OPTIONS ================= */
+.option {
+    display: block;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background: #eef6ff;
+}
+
+.option input {
+    margin-right: 8px;
+}
+
+/* ================= CONTROLS ================= */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* ================= PALETTE ================= */
+.palette-area {
+    border: 1px solid #dcdde1;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.palette-bar {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.palette-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+}
+
+.palette-btn {
+    height: 38px;
+    width: 38px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background: #dc3545;
+    color: white;
+    font-weight: bold;
+}
+
+.palette-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.palette-btn.current {
+    background: #0d6efd;
+}
+
+.palette-btn.answered {
+    background: #28a745;
+}
+
+.palette-btn.unanswered {
+    background: #dc3545;
+    color: #fff;
+}
+
+/* ================= BUTTON FIX ================= */
+.btn {
+    font-size: 14px;
+}
+/* ===== FORCE REMOVE WHITE TIMER BOX ===== */
+.exam-info-bar span {
+    background: transparent !important;
+    padding: 0 !important;
+}
+
+.exam-info-bar span b {
+    background: transparent !important;
+}
+
+/* ===== TIMER WRAPPER FIX ===== */
+.timer-wrap {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+    .exam-body {
+        grid-template-columns: 100%;
+    }
+}
+
+.exam-info-bar span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+#time.warning {
+    color: #ff4d4d !important;
+}
