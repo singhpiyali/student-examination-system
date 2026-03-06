@@ -1,4 +1,6 @@
-# Student Examination System
+#Student Examination System (PHP & MySQL)
+
+A web-based examination managem
 
 This is a web-based Student Examination System built using HTML, CSS, JavaScript, PHP, and MySQL.
 
@@ -34,3 +36,6 @@ Technologies Used:
 Piyali Singh  
 Junior Full Stack Developer  
 Kolkata, India
+
+
+
